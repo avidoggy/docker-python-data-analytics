@@ -1,4 +1,4 @@
-FROM python:2-alpine3.6
+FROM centos:7
 
 RUN yum update -y
 RUN yum install -y wget
