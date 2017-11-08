@@ -19,6 +19,7 @@ RUN easy_install pip
 ### Install python library
 RUN pip install --no-cache-dir requests[security]
 RUN pip install --no-cache-dir pandas scipy scikit-learn matplotlib jupyter pyspark
+COPY jupyter_notebook_config.py /root/.jupyter/
 
 ### Install zeppelin
 RUN wget -q ftp://ftp.twaren.net/Unix/Web/apache/zeppelin/zeppelin-0.7.3/zeppelin-0.7.3-bin-netinst.tgz
