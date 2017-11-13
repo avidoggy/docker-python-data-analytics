@@ -32,7 +32,7 @@ COPY zeppelin-site.xml ${ZEPPELIN_HOME}/conf/
 RUN wget -q https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
 RUN tar zxf spark-2.2.0-bin-hadoop2.7.tgz -C /opt/ && rm spark-2.2.0-bin-hadoop2.7.tgz
 ENV SPARK_HOME /opt/spark-2.2.0-bin-hadoop2.7
-COPY spark-defaults.conf ${SPARK_HOME}}/conf/
+COPY spark-defaults.conf ${SPARK_HOME}/conf/
 
 EXPOSE 8888 8080 4040
 
